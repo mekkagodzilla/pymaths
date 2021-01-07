@@ -1,6 +1,8 @@
 import turtle
-turtle.shape('turtle')
+
 turtle.delay(0)
+
+
 def square(n):
     """Draws a square of side n."""
     for a in range(4):
@@ -18,10 +20,22 @@ def hexagon(n):
         turtle.forward(n)
         turtle.left(60)
 
-side = 3
-for i in range(72):
-    hexagon(side)
-    turtle.left(5)
-    side += 3
+def star(n):
+    for pouetpouet in range(5):
+        turtle.forward(n)
+        turtle.right(144)
+
+
+def starSpiral(initial_size, iterations, angle, increase):
+
+    for i in range(iterations):
+        star(initial_size)
+        turtle.right(angle)
+        initial_size += increase
+
+
+starSpiral(20, 60, 5, 5)
+
+string ='I made a change.'
 
 turtle.exitonclick()
