@@ -36,6 +36,5 @@ def starSpiral(initial_size, iterations, angle, increase):
 
 starSpiral(20, 60, 5, 5)
 
-string ='I made a change.'
 
 turtle.exitonclick()
